@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway"
+            rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,11 +53,6 @@
 </div>
 
 <header class="header">
-<!--    <a href="#" class="header__logo" aria-label="Иконка логотипа магазина">-->
-<!--        <svg width="49" height="34">-->
-<!--            <use xlink:href="#icon-logo"></use>-->
-<!--        </svg>-->
-<!--    </a>-->
     <div class="header__block container">
         <button type="button" id="button-open" class="header__toggle">
             <span class="visually-hidden">Открыть меню</span>
@@ -94,14 +93,30 @@
                     </div>
                         <span class="header__contact-text"> Whatsapp</span>
                     </a>
-
                 </div>
             </div>
         </div>
     </div>
 </header>
-<main>
-    <h1><span class="main-text">Разработка сайтов</span> под ключ</h1>
+<main class="main-block">
+
+    <div class="main-block__text">
+        <h1 class="main-text">Разработка сайтов
+            <span class="main-text__p">под ключ</span>
+        </h1>
+        <p class="main-block__paragraph">Разработаем проект для решения задачи любой сложности </p>
+        <form class="main-block__form">
+            <div class="main-input">
+                <label for="first-number"></label>
+                <input type="number" name="firstName" id="first-number" placeholder="+7 (999) 444 22-33"/>
+            </div>
+            <button type="submit" class="btn">Реализовать мою идею</button>
+        </form>
+    </div>
+
+    <div class="main-block__dinamic">
+
+    </div>
 </main>
 </body>
 </html>
