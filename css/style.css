@@ -21,13 +21,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/montserrat-v15-latin-300.eot'); /* IE9 Compat Modes */
-    src: local(''),
-    url('../fonts/montserrat-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/montserrat-v15-latin-300.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/montserrat-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/montserrat-v15-latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+    src: url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'),
+    url('../fonts/montserrat-v15-latin-300.woff') format('woff')
 }
 
 @font-face {
@@ -113,8 +108,6 @@ img {
     line-height: 22px;
     border-radius: 35px;
     padding-top: 15px;
-    color: #122659;
-    background-color: #ffd787;
 }
 
 .button:hover,
@@ -126,14 +119,18 @@ img {
 .header {
     display: flex;
     justify-content: center;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .header__block {
-    display: flex;
-    margin: 0;
-    padding-top: 66px;
     padding-bottom: 38px;
-    max-width: 1200px;
 }
 
 .header__toggle {
@@ -146,42 +143,56 @@ img {
     opacity: 0.5;
 }
 
-.header__logo {
-    padding-top: 60px;
-    margin-right: 45px;
-    height: 14px;
-}
+/*.header__logo {*/
+/*    padding-top: 60px;*/
+/*    margin-right: 45px;*/
+/*    height: 14px;*/
+/*}*/
 
-.header__logo:hover,
-.header__logo:focus,
-.header__logo:active {
-    opacity: 0.5;
-}
+/*.header__logo:hover,*/
+/*.header__logo:focus,*/
+/*.header__logo:active {*/
+/*    opacity: 0.5;*/
+/*}*/
 
-.header__logo svg {
-    display: block;
-}
+/*.header__logo svg {*/
+/*    display: block;*/
+/*}*/
 
 .header__wrapper {
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: -96px;
+    width: 49px;
+    height: 34px;
+    background-image: url("../image/logo.svg");
 }
 
 .header__menu {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    padding-top: 66px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     min-width: 570px;
+    width: auto;
+    text-align: left;
 }
 
 .header__item {
-    margin-top: 1px;
-    margin-right: 4.15%;
     font-size: 17px;
     line-height: 16px;
-    text-align: center;
+    padding-right: 38px;
 }
 
 .header__item a {
@@ -201,15 +212,20 @@ img {
 
 .header__contacts {
     display: flex;
-    min-width: 400px;
-    margin-left: 230px;
+    max-width: 400px;
+    margin-left: 180px;
+    flex-wrap: wrap;
 }
 
 .header__contacts-phone {
+    padding-top: 66px;
     margin-right: 43px;
 }
 
-.header__contacts-phone a {
+.header__contact {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
     color:var(--overlay-color);
     text-decoration: none;
     transform: scale(0.5);
@@ -217,11 +233,6 @@ img {
     letter-spacing: 0;
 }
 
-.header__contact {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-}
 
 .header__contact:hover,
 .header__contact:focus,
@@ -231,34 +242,46 @@ img {
 }
 
 .header__contacts-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    min-width: 177px;
     background-color: #4F15F3;
-    /*width: 177px;*/
-    /*height: 48px;*/
     border-radius: 9px;
-    padding: 0 25px;
+
 }
 
 .header__contacts-whatsapp-link {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: top;
     text-decoration: none;
     color: var(--overlay-color);
     text-align: center;
     font-size: 17px;
-
 }
 
 .header__contact-icon {
-    margin-right: 15px;
+    padding-right: 15px;
 }
 
-/* Планшет */
-
-@media (max-width: 1199px) and (min-width: 991px){
-    /*.header__block {*/
-    /*    flex-wrap: wrap;*/
-    /*    padding-top: 26px;*/
-    /*    padding-bottom: 26px;*/
-    /*    width: 88.54%;*/
-    /*    min-width: 680px;*/
-    /*}*/
-
+.header__contact-text {
+    display: inline-block;
 }
+
+/*!* Планшет *!*/
+
+/*@media (max-width: 1199px) and (min-width: 991px){*/
+/*    !*.header__block {*!*/
+/*    !*    flex-wrap: wrap;*!*/
+/*    !*    padding-top: 26px;*!*/
+/*    !*    padding-bottom: 26px;*!*/
+/*    !*    width: 88.54%;*!*/
+/*    !*    min-width: 680px;*!*/
+/*    !*}*!*/
+
+/*}*/
