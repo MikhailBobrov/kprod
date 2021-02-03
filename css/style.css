@@ -194,7 +194,7 @@ img {
 
 .header__contacts-phone {
     padding-top: 66px;
-    margin-right: 43px;
+    margin-right: 38px;
 }
 
 .header__contact {
@@ -205,7 +205,7 @@ img {
     text-decoration: none;
     transform: scale(0.5);
     transition: 0.5s;
-    letter-spacing: 0;
+    letter-spacing: 1px;
 }
 
 
@@ -220,7 +220,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 51px;
     min-width: 177px;
     background-color: #4F15F3;
     border-radius: 9px;
@@ -230,8 +230,8 @@ img {
 .header__contacts-whatsapp-link {
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
     background-size: cover;
     background-position: top;
     text-decoration: none;
@@ -250,15 +250,17 @@ img {
 
 .main-block {
     display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-block__text {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 361px;
     margin-right: 51px;
-    margin-top: 144px;
+    margin-top: 147px;
     letter-spacing: 2px;
 }
 
@@ -267,9 +269,9 @@ img {
     position: absolute;
     width: 710px;
     height: 710px;
-    left: -356px;
-    top: -225px;
-    background: url("../image/bubble2 3.png") no-repeat;
+    left: -527px;
+    top: -196px;
+    background: url("../image/bubble2 4.png") no-repeat;
     z-index: -2;
 }
 
@@ -294,8 +296,8 @@ img {
 .main-text::before {
     content: "";
     position: absolute;
-    top: -53px;
-    left: 618px;
+    top: -51px;
+    left: 621px;
     width: 19px;
     height: 19px;
     background-image: url("../image/Ellipse 5.png");
@@ -311,8 +313,8 @@ img {
 .main-text__p::before {
     content: "";
     position: absolute;
-    top: 50px;
-    left: 652px;
+    top: 52px;
+    left: 655px;
     width: 8px;
     height: 8px;
     background: url("../image/little+.png");
@@ -321,7 +323,7 @@ img {
 .main-block__paragraph {
     margin: 0;
     width: 470px;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -336,7 +338,7 @@ img {
 
 .main-input input {
     margin-right: 20px;
-    width: 284px;
+    width: 287px;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 17px;
@@ -351,7 +353,7 @@ img {
 .btn {
     display: block;
     width: 335px;
-    padding-left: 20px;
+    padding-left: 5px;
     padding-top: 20px;
     padding-bottom: 17px;
     color: #fff;
@@ -368,6 +370,7 @@ img {
 
 .main-block__dinamic {
     position: relative;
+    margin-top: 5px;
     width: 527px;
     height: 680px;
     background-image: url("../image/2f75d3fc803667f4 1.png");
@@ -389,13 +392,334 @@ img {
     content: "";
     position: absolute;
     top: 53px;
-    left: 451px;
+    left: 448px;
     width: 109px;
     height: 107px;
     background: url("../image/dot.png");
     z-index: -2;
 }
 
+/*.main-block__rectangle-container {*/
+/*    position: fixed;*/
+/*}*/
+
+.main-block__rectangle {
+    position: absolute;
+    top: 480px;
+    left: 57px;
+    width: 164px;
+    height: 159px;
+    border-radius: 4px;
+    background-image: url("../image/Rectangle 40.png");
+    z-index: 1;
+}
+
+
+.main-block__quantity {
+    position: relative;
+    top: 25px;
+    right: 0;
+    width: 159px;
+    height: 186px;
+    background: #121B30;
+    border-radius: 21px;
+}
+
+.main-block__quantity::before {
+    content: "";
+    position: absolute;
+    top: 41px;
+    right: 69px;
+    width: 24px;
+    height: 18px;
+    background-image: url("../image/🎨 people.png");
+    z-index: 1;
+}
+
+.main-block__quantity::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    width: 52px;
+    height: 52px;
+    background: #F6F4FC;
+    border-radius: 50px;
+}
+
+.main-block__percent {
+    padding-left: 47px;
+    padding-top: 92px;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.main-block__client {
+    margin: 0;
+    padding-top: 4px;
+    padding-left: 17px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 140px;
+    line-height: 19px;
+}
+
+.main-block__sales {
+    position: relative;
+    top: 96px;
+    left: 391px;
+    width: 288px;
+    height: 99px;
+    background: #121B30;
+    border-radius: 21px;
+}
+
+.main-block__sales::before {
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: 232px;
+    width: 20px;
+    height: 21px;
+    background-image: url("../image/🎨 half-circle.png");
+    z-index: 1;
+}
+
+.main-block__sales::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 217px;
+    width: 52px;
+    height: 52px;
+    background: #F6F4FC;
+    border-radius: 50px;
+}
+
+.main-block__1000 {
+    font-size: 22px;
+    padding-left: 86px;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.main-block__inmonths {
+    font-size: 12px;
+    max-width: 243px;
+    line-height: 15px;
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 86px;
+}
+
+.main-block__companyback {
+    position: relative;
+    top: 174px;
+    left: 246px;
+    width: 326px;
+    height: 301px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.main-block__high {
+    position: relative;
+    margin: 0;
+    padding-left: 93px;
+    padding-top: 27px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #121B30;
+    line-height: 22px;
+}
+
+.main-block__high::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 265px;
+    width: 20px;
+    height: 17px;
+    background-image: url("../image/🎨 line-up.png");
+}
+
+.main-block__high::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    right: 251px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    background: #F6F4FC;
+}
+
+.main-block__diagram {
+    position: relative;
+    top: -15px;
+    left: 299px;
+    width: 238px;
+    height: 164px;
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Rectangle 16.svg");
+    z-index: 3;
+}
+
+.main-block__line-1 {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 238px;
+    height: 0;
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 1.svg");
+    z-index: 4;
+}
+
+.main-block__line-2 {
+    position: absolute;
+    top: 82px;
+    right: 0;
+    width: 238px;
+    height: 0;
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 2.svg");
+    z-index: 4;
+}
+
+.main-block__line-3 {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    width: 238px;
+    height: 0;
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 3.svg");
+    z-index: 4;
+}
+
+.main-block__line-4 {
+    position: absolute;
+    top: 82px;
+    right: 121px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 5.svg");
+    z-index: 4;
+}
+
+.main-block__line-5 {
+    position: absolute;
+    top: 82px;
+    right: 87px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 5.svg");
+    z-index: 4;
+}
+
+.main-block__line-6 {
+    position: absolute;
+    top: 82px;
+    right: 53px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 6.svg");
+    z-index: 4;
+}
+
+.main-block__line-7 {
+    position: absolute;
+    top: 82px;
+    right: 19px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 7.svg");
+    z-index: 4;
+}
+
+.main-block__line-8 {
+    position: absolute;
+    top: 82px;
+    right: -15px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 8.svg");
+    z-index: 4;
+}
+
+.main-block__line-9 {
+    position: absolute;
+    top: 82px;
+    right: -49px;
+    width: 164px;
+    height: 0;
+    transform: rotate(-90deg);
+    border: 1px solid #E6EBF0;
+    background-image: url("../image/Line 9.svg");
+    z-index: 4;
+}
+
+.main-block__100 {
+    position: absolute;
+    top: 116px;
+    right: 236px;
+    width: 31px;
+    height: 18px;
+    background: url("../image/100.svg") no-repeat;
+    z-index: 4;
+}
+
+.main-block__200 {
+    position: absolute;
+    top: 75px;
+    right: 236px;
+    width: 31px;
+    height: 18px;
+    background: url("../image/200.svg") no-repeat;
+    z-index: 4;
+}
+
+.main-block__300 {
+    position: absolute;
+    top: 34px;
+    right: 236px;
+    width: 31px;
+    height: 18px;
+    background: url("../image/300.svg") no-repeat;
+    z-index: 4;
+}
+
+.main-block__400 {
+    position: absolute;
+    top: -7px;
+    right: 236px;
+    width: 31px;
+    height: 18px;
+    background: url("../image/400.svg") no-repeat;
+    z-index: 4;
+}
+
+.main-block__main-line {
+    position: absolute;
+    top: 6px;
+    right: 1px;
+    width: 237px;
+    height: 133.6px;
+    background: url("../image/Vector 6.svg") no-repeat;
+    z-index: 4;
+}
 
 /*!* Планшет *!*/
 
