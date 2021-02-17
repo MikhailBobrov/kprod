@@ -1,5 +1,6 @@
 .container {
     padding: 0 15px;
+    width: 100%;
 }
 
 .header__wrapper {
@@ -119,8 +120,8 @@ body.closed-menu-js .header__contacts {
 
 .header__item {
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 22px;
+    margin-bottom: 0;
+    font-size: 16px;
     line-height: 31px;
     font-weight: 500;
 }
@@ -133,4 +134,52 @@ body.closed-menu-js .header__contacts {
 
 body.closed-menu-js .header__contacts {
     margin-left: auto;
+}
+
+.main-block {
+    display: flex;
+    padding: 0 35px;
+    flex-direction: column;
+}
+
+.main-block__text {
+    margin-top: 35px;
+}
+
+.main-block__form {
+    flex-direction: column;
+}
+
+.main-input input {
+    width: 240px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn {
+    width: 260px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-input {
+    margin-bottom: 24px;
+}
+
+.main-text {
+    font-size: 24px;
+    min-width: 290px;
+}
+
+.main-block__paragraph {
+    width: 290px;
+    font-size: 16px;
+}
+
+.main-text::before {
+    display: none;
+}
+
+.main-text__p::before {
+   display: none;
 }
