@@ -108,6 +108,8 @@ img {
     margin: 0;
     max-width: 1200px;
     width: 100%;
+    overflow: visible;
+    padding: 0 15px;
 }
 
 .header__block {
@@ -129,6 +131,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 100px;
 }
 
 .header__wrapper::before {
@@ -167,7 +170,7 @@ img {
 .header__item {
     font-size: 17px;
     line-height: 16px;
-    padding-right: 38px;
+    padding-right: 18px;
 }
 
 .header__item a {
@@ -188,7 +191,7 @@ img {
 .header__contacts {
     display: flex;
     max-width: 400px;
-    margin-left: 180px;
+    margin-left: 80px;
     flex-wrap: wrap;
 }
 
@@ -224,7 +227,10 @@ img {
     min-width: 177px;
     background-color: #4F15F3;
     border-radius: 9px;
+}
 
+.header__contacts-whatsapp:hover {
+    background-color: #F86161;
 }
 
 .header__contacts-whatsapp-link {
@@ -239,6 +245,7 @@ img {
     text-align: center;
     font-size: 17px;
 }
+
 
 .header__contact-icon {
     padding-right: 15px;
@@ -721,15 +728,205 @@ img {
     z-index: 4;
 }
 
-/*!* Планшет *!*/
+/* Планшет */
 
-/*@media (max-width: 1199px) and (min-width: 991px){*/
-/*    !*.header__block {*!*/
-/*    !*    flex-wrap: wrap;*!*/
-/*    !*    padding-top: 26px;*!*/
-/*    !*    padding-bottom: 26px;*!*/
-/*    !*    width: 88.54%;*!*/
-/*    !*    min-width: 680px;*!*/
-/*    !*}*!*/
+@media (max-width: 1199px) and (min-width: 991px){
+    .container {
+        display: flex;
+        margin: 0;
+        max-width: 991px;
+        width: 100%;
+    }
 
-/*}*/
+    .header__block {
+        flex-wrap: wrap;
+        padding-bottom: 26px;
+        min-width: 680px;
+    }
+
+    .header__toggle {
+        display: none;
+        border: none;
+        background-color: transparent;
+        margin-left: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 69px;
+        width: 25px;
+        height: 14px;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    .closed-menu-js {
+        position: static;
+        overflow-y: auto;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    .opened-menu-js {
+        position: fixed;
+        overflow-y: hidden;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    body.closed-menu-js .header__toggle {
+        display: block;
+    }
+
+    .header__toggle--close {
+        display: block;
+        height: 18px;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    body.closed-menu-js .header__toggle--close {
+        display: none;
+    }
+
+    .header__toggle svg {
+        display: block;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 680px;
+        padding-left: 1px;
+    }
+
+    body.closed-menu-js .header__wrapper {
+        flex-direction: row;
+        padding-left: 0;
+        min-width: 497px;
+    }
+
+    .header__menu {
+        margin-top: 31px;
+        margin-bottom: 4px;
+        flex-direction: column;
+    }
+
+    body.closed-menu-js .header__menu {
+        display: none;
+    }
+
+    .header__item {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 31px;
+        font-weight: 500;
+    }
+
+    .header__contacts {
+        margin-left: 0;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    body.closed-menu-js .header__contacts {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px){
+    .container {
+        display: flex;
+        margin: 0;
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .header__block {
+        flex-wrap: wrap;
+        padding-bottom: 26px;
+        min-width: 680px;
+    }
+
+    .header__toggle {
+        display: none;
+        border: none;
+        background-color: transparent;
+        margin-left: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 69px;
+        width: 25px;
+        height: 14px;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    .closed-menu-js {
+        position: static;
+        overflow-y: auto;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    .opened-menu-js {
+        position: fixed;
+        overflow-y: hidden;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    body.closed-menu-js .header__toggle {
+        display: block;
+    }
+
+    .header__toggle--close {
+        display: block;
+        height: 18px;
+    }
+
+    /* ДЛЯ JS МЕНЮ */
+    body.closed-menu-js .header__toggle--close {
+        display: none;
+    }
+
+    .header__toggle svg {
+        display: block;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 680px;
+        padding-left: 1px;
+    }
+
+    body.closed-menu-js .header__wrapper {
+        flex-direction: row;
+        padding-left: 0;
+        min-width: 497px;
+    }
+
+    .header__menu {
+        margin-top: 31px;
+        margin-bottom: 4px;
+        flex-direction: column;
+    }
+
+    body.closed-menu-js .header__menu {
+        display: none;
+    }
+
+    .header__item {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 31px;
+        font-weight: 500;
+    }
+
+    .header__contacts {
+        margin-left: 0;
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    body.closed-menu-js .header__contacts {
+        margin-left: auto;
+    }
+}
+

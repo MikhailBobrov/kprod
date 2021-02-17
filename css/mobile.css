@@ -1,0 +1,136 @@
+.container {
+    padding: 0 15px;
+}
+
+.header__wrapper {
+    flex-direction: column;
+    margin-left: -31px;
+    padding-top: 20px;
+}
+
+.header__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 36px;
+    width: 49px;
+    height: 34px;
+    background-image: url("../image/logo.svg");
+}
+
+.header__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 172px;
+    left: -197px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../image/+.png");
+}
+
+.header__block {
+    flex-wrap: wrap;
+    padding-bottom: 26px;
+    width: 90.62%;
+    min-width: 270px;
+}
+
+.header__toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 69px;
+    width: 25px;
+    height: 14px;
+}
+
+.header__contacts {
+    flex-direction: column;
+}
+
+.header__contacts-whatsapp {
+    margin-top: 23px;
+    width: 179px;
+}
+
+.header__contacts-phone {
+    padding-top: 26px;
+}
+
+/* ДЛЯ JS МЕНЮ */
+.closed-menu-js {
+    position: static;
+    overflow-y: auto;
+}
+
+/* ДЛЯ JS МЕНЮ */
+.opened-menu-js {
+    position: fixed;
+    overflow-y: hidden;
+}
+
+/* ДЛЯ JS МЕНЮ */
+body.closed-menu-js .header__toggle {
+    display: block;
+}
+
+.header__toggle--close {
+    display: block;
+    height: 18px;
+    z-index: 2;
+}
+
+/* ДЛЯ JS МЕНЮ */
+body.closed-menu-js .header__toggle--close {
+    display: none;
+}
+
+.header__toggle svg {
+    display: block;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 680px;
+    padding-left: 1px;
+}
+
+body.closed-menu-js .header__wrapper {
+    flex-direction: row;
+    padding-left: 0;
+    min-width: 497px;
+}
+
+.header__menu {
+    margin-top: 31px;
+    margin-bottom: 4px;
+    flex-direction: column;
+}
+
+body.closed-menu-js .header__menu,
+body.closed-menu-js .header__contacts {
+    display: none;
+}
+
+.header__item {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 500;
+}
+
+.header__contacts {
+    margin-left: 0;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+body.closed-menu-js .header__contacts {
+    margin-left: auto;
+}
